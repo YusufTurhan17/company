@@ -1,0 +1,17 @@
+import { Meta, ColorPalette, ColorItem } from "@storybook/addon-docs/blocks";
+
+import { defaultTheme } from "../utils/theme";
+
+<Meta title="Design System/Colors" />
+
+<ColorPalette>
+  {Object.entries(defaultTheme.colors).map(([colorName, colorValue]) => (
+    <ColorItem
+      key={colorValue}
+      title={`theme.colors.${colorName}`}
+      subtitle={colorName}
+      colors={[colorValue]}
+    />
+  ))}
+  <ColorItem title="Monochrome" colors={defaultTheme.colors} />
+</ColorPalette>

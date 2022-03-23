@@ -1,16 +1,16 @@
-import Container from "./components/Container";
+import Container from "./components/container/Container";
 import Header from "./components/Header";
-import Logo from "./components/Logo";
+import Logo from "./components/logo/Logo";
 import Navbar from "./components/Navbar";
-import View from "./components/View";
+import View from "./components/view/View";
 import "./App.css";
-import Button from "./components/buton/Button";
+import Button from "./components/button/Button";
 import { ReactComponent as Send } from "./assets/send.svg";
-import Box from "./components/Box/Box";
+import Box from "./components/box/Box";
 
 import Title from "./components/title/Title";
 import Text from "./components/text/Text";
-import BoxImage from "./components/Box/BoxImage";
+import BoxImage from "./components/box/BoxImage";
 
 function App() {
   return (

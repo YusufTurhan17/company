@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import React from "react";
-import { typography, variant } from "styled-system";
-
+import StyledSystemPropTypes from '@styled-system/prop-types'
+import { layout, typography, variant, color, flexbox,space } from "styled-system";
 
 const titleVariants = ({ theme }) => variant({
     prop: 'size',
@@ -26,6 +26,18 @@ const Title = styled(({ tagName = "h1", size="default", children, ...props }) =>
 )`
    ${titleVariants}
    ${typography}
+   ${color}
+   ${layout}
+   ${flexbox}
+   ${space}
 `;
+
+Title.propTypes = {
+...StyledSystemPropTypes.typography,
+...StyledSystemPropTypes.color,
+...StyledSystemPropTypes.layout,
+...StyledSystemPropTypes.flexbox,
+...StyledSystemPropTypes.space,
+}
 
 export default Title;

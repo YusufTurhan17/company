@@ -1,8 +1,7 @@
 import styled from "styled-components";
 import { space } from 'styled-system'
+import PropTypes from '@styled-system/prop-types'
 
-
- 
 const Section = styled.section`
   padding: 96px 0;
 
@@ -11,5 +10,9 @@ const Section = styled.section`
   }
   ${space}
 `;
+
+Section.propTypes = {
+  ...PropTypes.space
+}
 
 export default Section;
